@@ -17,7 +17,7 @@ const BodyComp = () => {
                     </button>
                 </Link>
             </div>
-            <Facilities/>
+            <Facilities />
             <Timeline />
             <Investors />
         </div>

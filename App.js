@@ -10,12 +10,12 @@ import Footer from "./src/Footer.js";
 const AppComp = () => {
     return (
         <div>
-            <Header/>
-            <Outlet/>
-            <Footer/>
+            <Header />
+            <Outlet />
+            <Footer />
         </div>
     );
-}
+};
 
 const appRouter = createBrowserRouter([
     {
@@ -29,7 +29,7 @@ const appRouter = createBrowserRouter([
             {
                 path: "/form",
                 element: <Form />,
-            }
+            },
         ],
         errorElement: <Error />,
     },

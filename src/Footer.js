@@ -4,10 +4,7 @@ const Footer = () => {
             <div className="mx-auto w-full max-w-screen-xl py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <a
-                            href="/"
-                            className="flex items-center"
-                        >
+                        <a href="/" className="flex items-center">
                             <img
                                 src="https://join.pedalstart.com/src/2021/05/logo.png"
                                 className="h-8 me-3"
@@ -45,12 +42,18 @@ const Footer = () => {
                             </h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <a href="https://pedalstart.com/privacy-policy-2/index.html" className="hover:underline">
+                                    <a
+                                        href="https://pedalstart.com/privacy-policy-2/index.html"
+                                        className="hover:underline"
+                                    >
                                         Privacy Policy
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://pedalstart.com/terms-refund/index.html" className="hover:underline">
+                                    <a
+                                        href="https://pedalstart.com/terms-refund/index.html"
+                                        className="hover:underline"
+                                    >
                                         Terms &amp; Refund
                                     </a>
                                 </li>

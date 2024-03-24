@@ -27,10 +27,12 @@ const Form = () => {
 
         //LinkedIn ID validator
         if (linkedin.length < 25) {
-            setError("Please enter a valid LinkedIn ID (minimum 25 characters).");
+            setError(
+                "Please enter a valid LinkedIn ID (minimum 25 characters)."
+            );
             return; // Prevent form submission if LinkedIn is invalid
         }
-        
+
         const res = await fetch("http://localhost:4000/", {
             method: "post",
             body: JSON.stringify({
@@ -79,7 +81,8 @@ const Form = () => {
                             }}
                             required
                         />
-                        {error==="Please enter a valid name (letters and spaces only)." && (
+                        {error ===
+                            "Please enter a valid name (letters and spaces only)." && (
                             <p className="text-red-500 text-sm pt-2">{error}</p>
                         )}
                     </div>
@@ -95,7 +98,8 @@ const Form = () => {
                             }}
                             required
                         />
-                        {error==="Please enter a valid mobile number (digits only)." && (
+                        {error ===
+                            "Please enter a valid mobile number (digits only)." && (
                             <p className="text-red-500 text-sm pt-2">{error}</p>
                         )}
                     </div>
@@ -124,7 +128,8 @@ const Form = () => {
                             }}
                             required
                         />
-                        {error==="Please enter a valid LinkedIn ID (minimum 25 characters)." && (
+                        {error ===
+                            "Please enter a valid LinkedIn ID (minimum 25 characters)." && (
                             <p className="text-red-500 text-sm pt-2">{error}</p>
                         )}
                     </div>
